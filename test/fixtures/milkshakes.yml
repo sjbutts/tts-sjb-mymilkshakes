@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shake: MyString
+  ingredients: MyString
+  price: MyString
+  image: MyString
+
+two:
+  shake: MyString
+  ingredients: MyString
+  price: MyString
+  image: MyString

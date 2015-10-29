@@ -1,0 +1,19 @@
+<h1>Our Milkshakes</h1>
+<div class="row">
+<% @milkshakes.each do |milkshake| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= milkshake.image %>">
+      <div class="caption">
+        <h3><%= milkshake.shake %></h3>
+        <h3>Cost: $<%= milkshake.price %></h3>
+        <%= link_to "More Info", milkshake, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Milkshake', new_milkshake_path, class: "btn btn-primary" %>
